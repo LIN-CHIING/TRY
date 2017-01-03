@@ -194,6 +194,7 @@ display.display(); //顯示畫面
         digitalWrite(REDPIN,LOW);
         digitalWrite(GREENPIN,HIGH);
         digitalWrite(BLUEPIN,HIGH);
+        analogWrite(ledpin,100);
         delay(200); 
         Serial.print("RAIN!");
         }
@@ -202,6 +203,7 @@ display.display(); //顯示畫面
         digitalWrite(REDPIN,HIGH);
         digitalWrite(GREENPIN,LOW);
         digitalWrite(BLUEPIN,HIGH);
+        analogWrite(ledpin,127);
         delay(200);  
        Serial.print("CLOUD~");
        }
@@ -210,6 +212,8 @@ display.display(); //顯示畫面
         digitalWrite(REDPIN,HIGH);
         digitalWrite(GREENPIN,HIGH);
         digitalWrite(BLUEPIN,LOW);
+//      analogWrite(ledpin,val/4);
+        analogWrite(ledpin,230);
         delay(200); 
        Serial.print("SUNNY!");
        }
